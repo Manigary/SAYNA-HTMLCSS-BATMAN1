@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300..700&display=swap');
+
+@font-face {
+    font-family: 'rajdhani';
+    src: url(../assets/Police/Rajdhani-Medium.ttf);
+}
+
+:root{
+    --yellow-color:  #FFFF00;
+    --yellow-light:   #f8f184;
+    --blue-color:  #19587d;
+    --white-color: #fff;
+    --gradient-white: #EDDEBF67;
+    --gradient-red: #89000978;
+    --black-color: #000; 
+}
+*{
+
+    margin: 0cm;
+    padding: 0cm;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: rajdhani;
+    font-size: 36px;
+    font-weight: 400;
+}
+button{
+    font-family: rajdhani;
+    font-size: 20px;
+    font-weight: 400; 
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'space grotest';
+    font-weight: 300;
+}
+/* Design de la navigation */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+
+ul{
+    list-style: none;
+
+}
+
+nav ul a {
+    color: var(--white-color);
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'rajdhani';
+    /* text-decoration: none; */
+}
+
+
+nav ul a:hover{
+    color: var(--yellow-color)
+}
+
+/* Design de la partie en tête hero*/
+
+#hero {
+    background-image: url(/assets/Illustrations/Bathome1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #19587d;
+    background-size: cover;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+#hero .titre{
+margin: 20px 0;
+}
+
+.btn{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 22px;
+    padding: 10px 40px;
+    margin-top: 10px;
+    background: linear-gradient(
+        80deg,var(--gradient-white),var(--gradient-red)
+    );
+    box-shadow: var(--black-color) 15px 15px 50px;
+}
+#hero .flèche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 250px;
+}
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+}
+.scroll .social{
+    margin-top: 15px;
+}
+
+/* Design de la section batman personnage*/
+
+#batman-cinema, #batman-justice-league{
+    margin-top: 40px;
+}
+.batman-personnage{
+    display: flex;
+    justify-content: space-between;
+}
+
+#batman-cinema .titre, #batman-justice-league .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#batman-cinema .description, #batman-justice-league .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
+}
+
+#batman-cinema .personnage-info{
+    text-align: center;
+}
+
+
+/*Design de la partie multimedia*/
+#multimedia button{
+    position: relative
+    top: 155px
+    background: none;
+    border: none
+}
+
+#multimedia button.right{
+    right: -85%;
+}
+#multimedia .slider-multimedia{
+    display: flex;
+    width: 60%;
+    margin: 40px auto;
+}
+
+#multmimedia .slider-image{
+    width: 100%;
+}
+
+#multimedia .slider-content{
+    padding: 15px;
+    background-color: #727272;
+    /*border-radius 20px*/
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#multimedia p{
+    font-size: 14px
+}
+
+#multimedia .yellow{
+    color: var(--yellow-color);
+}
+
+/*Design de la partie Contact-Formulaire */
+
+#contact{
+    background-color: darkslategray;
+    padding: 70px 0;
+}
+
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+#contact .titre{
+    display: block;
+    margin: 28px 0;
+}
+
+#contact .form input[type='email'], textarea{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 2px solid rgb(120, 120, 120);
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+#contact .news{
+    margin: 15px 0;
+    border-bottom: 2px solid rgb(120, 120, 120);
+}
+
